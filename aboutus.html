@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>RATEMA-aboutus</title>
+<link rel="icon" type="image/png" href="images/greenhand.png"  sizes="16x16">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px; /*some padding */
+  text-align: center; /* center the text */
+  background: #1abc9c; /* green background */
+ background-image: url('images/hands2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+   /* background-size: 100% 100%;
+   background-size: Auto 300px;
+    background-size: cover;*/
+    background-size: contain;
+    background-size: round auto;
+
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main { 
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.sdgicon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #aaa;*/
+   background-image: url('images/icon.jpg');
+   background-repeat: no-repeat;
+  width: 50%;
+  padding: 20px;
+
+}
+
+.cheti{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #aaa; */
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-image: url('images/cheti.jpg');
+  background-repeat: no-repeat;
+
+}
+
+
+/* Fake image, just for this example */
+.gabriel {
+ 
+ margin-left: auto;
+  margin-right: auto;
+ /*background-color: #aaa;*/
+ /* width: 45%; */
+  width: 30%;
+  padding: 20px;
+ /* background-color: #aaa;*/
+  /*width: 30%;*/
+  /*content:url(gabriel.jpg);*/
+  background-image:url('images/gabriel.jpeg');
+  background-repeat: no-repeat;
+  float:left;
+  
+}
+
+/* Fake image, just for this example */
+.gwao {
+
+  /*background-color: #aaa;*/
+  width: 30%;
+  padding: 20px;
+  /*content:url(gabriel.jpg);*/
+  background-image:url('images/gwao.jpeg');
+  background-repeat: no-repeat;
+  float:left;
+  
+}
+
+/* Fake image, just for this example */
+.amigo {
+
+  /*background-color: #aaa;*/
+  width: 30%;
+  padding: 20px;
+  /*content:url(gabriel.jpg);*/
+  background-image:url('images/amigo.jpeg');
+  background-repeat: no-repeat;
+  float:left;
+  
+}
+
+
+
+/* Fake image, just for this example2 */
+.fakeimg2 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Nother image, just for this example */
+.gabmaneno {
+  background-color: #FFFFFF;
+   width: 60%;
+  padding: 10px;
+  display: inline-block;
+  clear: left;
+  height:200px;
+  margin-left:5px; 
+}
+
+.another2 {
+  background-color: #FFFFFF;
+   width: 60%;
+  padding: 10px;
+  display: inline-block;
+  clear: left;
+  height:200px;
+  margin-left:5px; 
+}
+
+.another3 {
+  background-color: #FFFFFF;
+   width: 60%;
+  padding: 10px;
+  display: inline-block;
+  clear: left;
+  height:200px;
+  margin-left:5px; 
+}
+
+.space{
+   font-size : 13px;
+    padding : 0;
+    margin : 0;
+    line-height : 0px;
+}
+
+.space2{
+   font-size : 13px;
+    padding : 0;
+    margin : 0;
+    line-height : 0px;
+}
+
+.space3{
+   font-size : 13px;
+    padding : 0;
+    margin : 0;
+    line-height : 0px;
+}
+
+.p1 {
+/*font-size : 30px;*/
+   /* background-color : #cfc;*/
+    padding : 0;
+    margin : 0;
+    line-height : 20px; margin: 0;
+
+     }
+
+.p2 {
+/*font-size : 30px;*/
+   /* background-color : #cfc;*/
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+
+ margin: 0 !important; 
+}
+
+/* Footer */
+.footer2 {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+   color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header"  style="height: 200px;">
+<!--h1>RATEMA</h1>
+<p>RAFIKI TEHAMA KWA MAENDELEO YA JAMII.</p-->
+<!--p>(Friendly Techonologies For Community Development).</p-->
+</div>
+
+<div class="navbar">
+  <a href="index.htm">Home</a>
+  <a href="project.htm">Projects</a>
+  <a href="aboutus.htm">About Us</a>
+  <a href="contact.htm" class="right">Contacts</a>
+</div>
+
+
+
+<div class="row">
+  
+  <div class="main">
+    <h2>About RATEMA</h2>
+    <p>RATEMA was formed in 2019 by a small group of youth, aiming at support the communities by co-create projects that can tackle social problems including promoting health and wellbeing, Social Development, Environmental and Educational.</p>
+    <p></p>
+    <h3>VISSION</h3>
+     <p>To see communities using Technologies in order to become more sustainable places to live, work and socialize in while building our national.</p>
+    <h3>MISSION</h3>
+     <p>Co-create open and innovative projects that can enrich local communities and provide social supports</p>
+    <h3>Objectives</h3>
+    <p>1. To empower our communities become more sustainable places to live, work and socialize in.</p>
+    <p>2. To advocate the UN's Sustainable Development Goals (SDGs) in our communities.</p>
+    <p>3. To use technologies in promoting health and wellbeing, support the most socially disadvantage members of the society.</p>
+    <p>4. To educate community especially young generation to make positive use of technologies in achieving one's goals for a brighter future.</p>
+    <p>5. To discourage enironmental harmful actions.</p>
+   
+   
+    <br>
+    <!--h2>Executive Committee</h2-->
+        
+        <div>  
+
+        <!--div class="gabriel" style="height:200px;"></div-->
+        <div class="gabmaneno" style="height:200px;"><p><b><i>"By applying technologies in our communities,we will be able to address diffirent issues and solve a lot of problems with minimun challenges. The core function of RATEMA is to create those project."</i></b></p>
+          <p class="p1"><i>Gabriel Rogath</i></p>
+          <p class="p2"><i>Chairman & Founder</i></p>
+
+
+        </div>
+            <!--div class="space">
+              <br>
+        <p>Gabriel R. Assenga</p>
+        <p>Chairman & Founder</p>
+        <p>RATEMA</p>
+         </div-->
+        
+        <!--div class="gwao" style="height:200px;"></div>
+        <div class="another2" style="height:200px;"><p></p></div>
+             <div class="space2">
+        <p>Gaudencia Mdaki</p>
+        <p>Executive Secretary</p>
+        <p>RATEMA</p>
+             </div-->
+        <!--div class="amigo" style="height:200px;"></div>
+        <div class="another3" style="height:200px;"><p></p></div>
+              <div class="space3">
+        <p>Amigo Abdulrazak Salim </p>
+        <p>Tresurer</p>
+        <p>RATEMA</p>
+               </div-->        
+
+        </div>
+
+
+  </div>
+
+<div class="side">
+    <h2>Latest Publications</h2>
+    <h5>SDGsPamoja App Official Launched</h5>
+    <div class="sdgicon" style="height:200px;"></div>
+    <p>SDGsPamoja App Official Launched</p>
+
+
+    <h5>RATEMA Certification:</h5>
+    <div class="cheti" style="height:300px;"></div>
+    <p>RATEMA receive a registration certicate from the Government</p>
+    
+   
+    <!--h5>New Educational Project to be Launched</h5>
+    <p>Coming Soon (March 2020).....</p-->
+    
+  </div>
+
+
+</div>
+
+
+<div class="footer2">
+<h2>Partners with:</h2>
+</div>
+
+<br>
+
+<div class="footer">
+  <p>Copyright © 2020 RATEMA   |   ALL RIGHTS RESERVED </p>
+  
+</div>
+
+
+
+</body>
+</html>
